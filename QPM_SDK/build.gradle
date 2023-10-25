@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 def ARTIFACT_ID = 'qpm'
 def VERSION_NAME = '1.0.5'
@@ -29,6 +30,19 @@ android {
         abortOnError false
     }
 
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = GROUP_ID
+                artifactId = ARTIFACT_ID
+                version = VERSION_NAME
+            }
+        }
+    }
 }
 
 dependencies {
