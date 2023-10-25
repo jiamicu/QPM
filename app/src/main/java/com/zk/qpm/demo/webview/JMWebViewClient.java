@@ -3,7 +3,6 @@ package com.zk.qpm.demo.webview;
 import android.annotation.TargetApi;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -14,6 +13,8 @@ import com.blankj.utilcode.util.ConvertUtils;
 import com.blankj.utilcode.util.ResourceUtils;
 
 import java.io.InputStream;
+
+import androidx.annotation.Nullable;
 
 public class JMWebViewClient extends WebViewClient {
 

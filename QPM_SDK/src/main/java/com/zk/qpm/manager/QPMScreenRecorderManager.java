@@ -11,7 +11,6 @@ import android.media.projection.MediaProjection;
 import android.media.projection.MediaProjectionManager;
 import android.os.Build;
 import android.os.Environment;
-import android.support.annotation.RequiresApi;
 import android.util.DisplayMetrics;
 import android.widget.Toast;
 
@@ -21,6 +20,8 @@ import com.zk.qpm.R;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import androidx.annotation.RequiresApi;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class QPMScreenRecorderManager {

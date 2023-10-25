@@ -1,13 +1,14 @@
 package com.zk.qpm.utils;
 
 import android.os.Build;
-import android.support.annotation.StringDef;
 import android.text.TextUtils;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
+import androidx.annotation.StringDef;
 
 public class RomUtils {
     private static final String TAG = "RomUtils";

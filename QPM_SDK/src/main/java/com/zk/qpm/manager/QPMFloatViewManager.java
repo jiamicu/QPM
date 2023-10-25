@@ -45,24 +45,25 @@ public class QPMFloatViewManager {
         Context context = QPMManager.getInstance().getContext();
         typeBeans.clear();
         typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_PACKAGE, context.getString(R.string.jm_gt_switch_package), null, false, 1));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TOP_ACTIVITY, context.getString(R.string.jm_gt_switch_top_activity), null, true, 2));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TOP_ACTIVITY, context.getString(R.string.jm_gt_switch_top_activity), null, false, 2));
         typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_FPS_VIEW, context.getString(R.string.jm_gt_switch_fps), null, true, 3));
         typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_THREAD_AUTO_ADD, context.getString(R.string.jm_gt_switch_auto_add), null, false, 4));
         typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_CPU_VIEW, context.getString(R.string.jm_gt_switch_cpu), null, true, 5));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_MEMORY_VIEW, context.getString(R.string.jm_gt_switch_memory), null, true, 6));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_ACTIVITY_STACK, context.getString(R.string.jm_gt_switch_activity_stack), null, false, 7));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_THREAD_COUNT, context.getString(R.string.jm_gt_switch_thread_count), null, true, 8));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_FLOW_DATA, context.getString(R.string.jm_gt_switch_flow), null, false, 9));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_SOC_TEMP_VIEW, context.getString(R.string.jm_gt_switch_soc_temp), null, true, 6));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_MEMORY_VIEW, context.getString(R.string.jm_gt_switch_memory), null, true, 7));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_ACTIVITY_STACK, context.getString(R.string.jm_gt_switch_activity_stack), null, false, 8));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_THREAD_COUNT, context.getString(R.string.jm_gt_switch_thread_count), null, true, 9));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_FLOW_DATA, context.getString(R.string.jm_gt_switch_flow), null, false, 10));
         if (QPMManager.getInstance().isImplementOkHttp()) {
-            typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_NETWORK_API, context.getString(R.string.jm_gt_switch_api), null, false, 10));
+            typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_NETWORK_API, context.getString(R.string.jm_gt_switch_api), null, false, 11));
         }
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_SCREEN_RECORDER, context.getString(R.string.jm_gt_switch_screen_recorder), getScreenRecorderPath(), false, 11));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_H5_MONITOR, context.getString(R.string.jm_gt_switch_h5_monitor), null, false, 12));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_BIG_TEXT, context.getString(R.string.jm_gt_switch_big_text), null, true, 13));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_KEY_VALUE, context.getString(R.string.jm_gt_switch_keyvalue), null, true, 14));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_KEY_PIC, context.getString(R.string.jm_gt_switch_key_pic), null, true, 15));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_PIC_VALUE, context.getString(R.string.jm_gt_switch_pic_value), null, true, 16));
-        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_CUSTOM, context.getString(R.string.jm_gt_switch_custom), null, true, 17));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_SCREEN_RECORDER, context.getString(R.string.jm_gt_switch_screen_recorder), getScreenRecorderPath(), false, 12));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_H5_MONITOR, context.getString(R.string.jm_gt_switch_h5_monitor), null, false, 13));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_BIG_TEXT, context.getString(R.string.jm_gt_switch_big_text), null, true, 14));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_KEY_VALUE, context.getString(R.string.jm_gt_switch_keyvalue), null, true, 15));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_KEY_PIC, context.getString(R.string.jm_gt_switch_key_pic), null, true, 16));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_PIC_VALUE, context.getString(R.string.jm_gt_switch_pic_value), null, true, 17));
+        typeBeans.add(new QPMFloatViewBean(QPMFloatViewType.TYPE_FLOAT_VIEW_TEMPLATE_CUSTOM, context.getString(R.string.jm_gt_switch_custom), null, true, 18));
     }
 
     public static QPMFloatViewManager getInstance() {

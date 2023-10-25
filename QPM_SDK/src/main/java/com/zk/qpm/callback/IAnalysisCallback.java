@@ -1,7 +1,5 @@
 package com.zk.qpm.callback;
 
-import android.support.annotation.StringDef;
-
 import com.zk.qpm.QPMRAnalysisResult;
 
 import java.lang.annotation.Documented;
@@ -9,6 +7,7 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import androidx.annotation.StringDef;
 
 /**
  * 回调方法有可能来自子线程，如果在主界面要修改 UI，请使用 handler。
@@ -24,6 +23,7 @@ public interface IAnalysisCallback {
             TYPE_REFRESH_BIG_BLOCK_INFO,
             TYPE_REFRESH_LOW_SM_INFO,
             TYPE_REFRESH_CPU_INFO,
+            TYPE_REFRESH_SOC_TEMP_INFO,
             TYPE_REFRESH_MEMORY_INFO,
             TYPE_REFRESH_FLOW_INFO,
             TYPE_REFRESH_THREAD_INFO,
@@ -51,6 +51,9 @@ public interface IAnalysisCallback {
     String TYPE_REFRESH_BIG_BLOCK_INFO = "type_refresh_big_block_info";
     String TYPE_REFRESH_LOW_SM_INFO = "type_refresh_low_sm_info";
     String TYPE_REFRESH_CPU_INFO = "type_refresh_cpu_info";
+
+    String TYPE_REFRESH_SOC_TEMP_INFO = "type_refresh_soc_temp_info";
+
     String TYPE_REFRESH_MEMORY_INFO = "type_refresh_memory_info";
     String TYPE_REFRESH_FLOW_INFO = "type_refresh_flow_info";
     String TYPE_REFRESH_THREAD_INFO = "type_refresh_thread_info";

@@ -15,6 +15,8 @@ public class QPMRAnalysisResult {
     public DeviceInfo deviceInfo = new DeviceInfo();
     public FrameInfo frameInfo = new FrameInfo();
     public CMNTInfo cmntInfo = new CMNTInfo();
+
+    public SocTempInfo socTempInfo = new SocTempInfo();
     public List<NetworkInfo> networkInfos = new ArrayList<>();
     public ActivityStackInfo activityStackInfos = new ActivityStackInfo();
     public ScreenRecorderStatusInfo screenRecorderStatusInfo = new ScreenRecorderStatusInfo();
@@ -65,6 +67,11 @@ public class QPMRAnalysisResult {
         public double flowDownSpeed;
         public int threadCount;
         public int gtThreadCount;
+    }
+
+    public static class SocTempInfo {
+        public int cpuTemp;
+        public int gpuTemp;
     }
 
     public static class NetworkInfo {

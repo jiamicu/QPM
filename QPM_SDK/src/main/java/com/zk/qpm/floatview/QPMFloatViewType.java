@@ -1,9 +1,10 @@
 package com.zk.qpm.floatview;
 
-import android.support.annotation.StringDef;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.StringDef;
 
 public interface QPMFloatViewType {
 
@@ -13,6 +14,7 @@ public interface QPMFloatViewType {
             TYPE_FLOAT_VIEW_FPS_VIEW,
             TYPE_FLOAT_VIEW_THREAD_AUTO_ADD,
             TYPE_FLOAT_VIEW_CPU_VIEW,
+            TYPE_FLOAT_VIEW_SOC_TEMP_VIEW,
             TYPE_FLOAT_VIEW_MEMORY_VIEW,
             TYPE_FLOAT_VIEW_ACTIVITY_STACK,
             TYPE_FLOAT_VIEW_THREAD_COUNT,
@@ -36,6 +38,9 @@ public interface QPMFloatViewType {
     String TYPE_FLOAT_VIEW_FPS_VIEW = "type_float_view_fps_view";
     String TYPE_FLOAT_VIEW_THREAD_AUTO_ADD = "type_float_view_thread_auto_add";
     String TYPE_FLOAT_VIEW_CPU_VIEW = "type_float_view_cpu_view";
+
+    String TYPE_FLOAT_VIEW_SOC_TEMP_VIEW = "type_float_view_soc_temp_view";
+
     String TYPE_FLOAT_VIEW_MEMORY_VIEW = "type_float_view_memory_view";
     String TYPE_FLOAT_VIEW_ACTIVITY_STACK = "type_float_view_activity_stack";
     String TYPE_FLOAT_VIEW_THREAD_COUNT = "type_float_view_thread_count";

@@ -42,7 +42,7 @@ public class QPMGetAppInfoExecutor implements IExecutor {
                 AppUtils.getAppName(),
                 AppUtils.getAppVersionName(),
                 AppUtils.getAppVersionCode(),
-                BuildConfig.VERSION_CODE,
+                105,
                 System.currentTimeMillis(),
                 0);
     }

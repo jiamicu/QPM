@@ -4,7 +4,6 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 
 import com.zk.qpm.manager.QPMManager;
 import com.zk.qpm.service.QPMBaseService;
@@ -12,6 +11,8 @@ import com.zk.qpm.service.QPMBaseService;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * 主 Service

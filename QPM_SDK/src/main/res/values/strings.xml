@@ -38,6 +38,7 @@
     <string name="jm_gt_switch_package">是否显示包名</string>
     <string name="jm_gt_switch_top_activity">是否显示栈顶Activity</string>
     <string name="jm_gt_switch_cpu">是否显示CPU占比</string>
+    <string name="jm_gt_switch_soc_temp">是否显示核心温度</string>
     <string name="jm_gt_switch_memory">是否显示内存占比</string>
     <string name="jm_gt_switch_thread_count">是否显示线程数</string>
     <string name="jm_gt_switch_auto_add">是否显示计数器</string>
@@ -80,6 +81,9 @@
     <string name="jm_gt_floatview_cpu">CPU:</string>
     <string name="jm_gt_floatview_flow">流量相关</string>
     <string name="jm_gt_floatview_fps">FPS:</string>
+    <string name="jm_gt_floatview_soc_temp">核心温度:</string>
+    <string name="jm_gt_floatview_cpu_temp">Cpu温度：</string>
+    <string name="jm_gt_floatview_gpu_temp">Gpu温度：</string>
     <string name="jm_gt_floatview_bigblock">大卡顿次数：</string>
     <string name="jm_gt_floatview_lowsm">低流畅次数：</string>
     <string name="jm_gt_floatview_islowsm">当前是否低流畅：</string>

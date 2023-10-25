@@ -2,7 +2,6 @@ package com.zk.qpm.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.annotation.StringDef;
 import android.text.TextUtils;
 
 import org.xmlpull.v1.XmlPullParserException;
@@ -21,6 +20,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.StringDef;
 
 /**
  *  SP文件工具

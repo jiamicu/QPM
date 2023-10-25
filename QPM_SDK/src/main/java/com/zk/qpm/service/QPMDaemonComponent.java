@@ -15,6 +15,7 @@ import com.zk.qpm.executor.QPMGetFlowInfoExecutor;
 import com.zk.qpm.executor.QPMGetH5MonitorInfoExecutor;
 import com.zk.qpm.executor.QPMGetMemoryInfoExecutor;
 import com.zk.qpm.executor.QPMGetNetworkInfoExecutor;
+import com.zk.qpm.executor.QPMGetSocTempExecutor;
 import com.zk.qpm.executor.QPMGetThreadCountExecutor;
 import com.zk.qpm.executor.QPMGetTopActivityExecutor;
 import com.zk.qpm.executor.QPMScreenRecorderStatusExecutor;
@@ -35,6 +36,7 @@ public class QPMDaemonComponent extends QPMBaseService {
         executors.add(new QPMGetTopActivityExecutor());
         executors.add(new QPMGetAutoAddExecutor());
         executors.add(new QPMGetCPUInfoExecutor());
+        executors.add(new QPMGetSocTempExecutor());
         executors.add(new QPMGetThreadCountExecutor());
         executors.add(new QPMGetMemoryInfoExecutor(am));
         executors.add(new QPMGetFlowInfoExecutor());

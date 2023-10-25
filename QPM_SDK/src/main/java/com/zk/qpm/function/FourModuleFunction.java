@@ -2,8 +2,6 @@ package com.zk.qpm.function;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -25,6 +23,9 @@ import com.zk.qpm.utils.XMLParser;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class FourModuleFunction implements IFunction {
 
